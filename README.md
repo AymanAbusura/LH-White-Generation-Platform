@@ -113,4 +113,3 @@ white-gen/
 | POST | /api/templates/from-task/:id | Сохранить как шаблон |
 | DELETE | /api/templates/:id | Удалить шаблон |
 | GET | /api/queue/stats | Статистика очереди |
-# LH-White-Generation-Platform

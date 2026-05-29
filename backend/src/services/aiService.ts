@@ -36,7 +36,7 @@ export async function generateWhitePage(
 
   // Generate main page
   const mainResponse = await anthropic.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-sonnet-4-6',
     max_tokens: 4000,
     system: SYSTEM_PROMPT,
     messages: [
@@ -65,7 +65,7 @@ Output ONLY the complete HTML file, nothing else.`,
 
   // Generate privacy policy
   const privacyResponse = await anthropic.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-sonnet-4-6',
     max_tokens: 3000,
     system: SYSTEM_PROMPT,
     messages: [
@@ -87,7 +87,7 @@ Output ONLY the complete HTML file.`,
 
   // Generate terms page
   const termsResponse = await anthropic.messages.create({
-    model: 'claude-3-5-sonnet-20241022',
+    model: 'claude-sonnet-4-6',
     max_tokens: 3000,
     system: SYSTEM_PROMPT,
     messages: [
